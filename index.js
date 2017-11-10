@@ -2,20 +2,20 @@ function BoardMember(name, homeState, training){
   this.name = name
   this.homeState = homeState
   this.training = training
-  
+
   this.veto = function(){
     return "No, I must disagree"
   }
-  function approve(){
+  this.approve = function(){
     return 'You can do that!'
   }
-  function doCharity(){
+  this.doCharity = function(){
     return "I like to help people."
   }
-  function releasePressStatement(){
+  this.releasePressStatement = function(){
     return "You will see great things from Scuber."
   }
-  function sayHi(){
+  this.sayHi = function(){
     return `"Hi, my name is ${name}. I am from ${homestate}, and I was trained in ${training}.`
   }
 }
