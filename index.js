@@ -1,12 +1,13 @@
-function BoardMember(name, homestate, training){
+function BoardMember(name, homeState, training){
   this.name = name
-  this.homestate = homestate
-  this.training=training
+  this.homeState = homeState
+  this.training = training
+  
   function veto(){
     return "No, I must disagree"
   }
   function approve(){
-    return 'You can do that!'  
+    return 'You can do that!'
   }
   function doCharity(){
     return "I like to help people."
